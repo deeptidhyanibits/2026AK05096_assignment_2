@@ -54,32 +54,41 @@ and Gaussian Naive Bayes use the unscaled input features.
 
 ## c. GitHub Repository Link
 
-[Open the project repository](PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE)
+[Open the project repository](https://github.com/deeptidhyanibits/2026AK05096_assignment_2)
 
 ## d. Models Used and Evaluation Results
 
-All five models are evaluated on the same held-out test dataset.
+All five models were trained on the same training dataset and
+evaluated on the same held-out test dataset of 114 instances.
+
 Precision, Recall, and F1 use Malignant (1) as the positive class.
-AUC is calculated using predicted probabilities for the malignant class.
+AUC is calculated using predicted probabilities for the malignant
+class. All scores are reported as decimals.
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---:|---:|---:|---:|---:|---:|
-| Logistic Regression | TODO | TODO | TODO | TODO | TODO | TODO |
-| Decision Tree | TODO | TODO | TODO | TODO | TODO | TODO |
-| KNN | TODO | TODO | TODO | TODO | TODO | TODO |
-| Naive Bayes | TODO | TODO | TODO | TODO | TODO | TODO |
-| Support Vector Machine | TODO | TODO | TODO | TODO | TODO | TODO |
+| Logistic Regression | 0.9649 | 0.9960 | 0.9750 | 0.9286 | 0.9512 | 0.9245 |
+| Decision Tree | 0.9211 | 0.9448 | 0.9459 | 0.8333 | 0.8861 | 0.8299 |
+| KNN | 0.9561 | 0.9823 | 0.9744 | 0.9048 | 0.9383 | 0.9058 |
+| Naive Bayes | 0.9386 | 0.9934 | 1.0000 | 0.8333 | 0.9091 | 0.8715 |
+| Support Vector Machine | 0.9737 | 0.9947 | 1.0000 | 0.9286 | 0.9630 | 0.9442 |
 
 ## e. Observations on Model Performance
 
+The following observations are based on the held-out test set of
+114 instances. Malignant (1) is the positive class.
+
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | TODO |
-| Decision Tree | TODO |
-| KNN | TODO |
-| Naive Bayes | TODO |
-| Support Vector Machine | TODO |
-| Overall winner for this dataset | TODO |
+| Logistic Regression | Achieved an accuracy of 0.9649 and the highest AUC of 0.9960. Its recall of 0.9286 matched SVM, with 3 malignant cases missed and 1 benign case incorrectly classified as malignant. |
+| Decision Tree | Achieved an accuracy of 0.9211 and an F1 score of 0.8861, the lowest among the five models. It missed 7 malignant cases and incorrectly classified 2 benign cases as malignant. |
+| KNN | Achieved an accuracy of 0.9561, precision of 0.9744, and F1 score of 0.9383. It missed 4 malignant cases and incorrectly classified 1 benign case as malignant. |
+| Naive Bayes | Achieved perfect precision of 1.0000, with no benign cases incorrectly classified as malignant. However, its recall of 0.8333 means it missed 7 malignant cases, resulting in an F1 score of 0.9091. |
+| Support Vector Machine | Achieved the highest accuracy of 0.9737, F1 score of 0.9630, and MCC of 0.9442. It correctly classified all benign cases and detected 39 of 42 malignant cases, missing 3. |
+| Overall winner for this dataset | SVM was selected as the overall winner on this test set because it achieved the highest accuracy, F1, and MCC, while matching the highest recall and achieving perfect precision. Logistic Regression had a slightly higher AUC, indicating stronger ranking performance across classification thresholds. |
+
+These findings apply to this particular train/test split and do not
+establish that one model will perform best on every unseen dataset.
 
 ## f. How to Run the Project
 
@@ -119,4 +128,4 @@ The app loads saved models and does not retrain on uploaded data.
 
 ## g. Live Streamlit Application
 
-[Open the Streamlit app](PASTE_YOUR_STREAMLIT_APP_URL_HERE)
+[Open the Streamlit app](https://2026ak05096assignment2.streamlit.app)
