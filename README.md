@@ -1,5 +1,3 @@
-Dataset = https://www.kaggle.com/datasets/utkarshx27/breast-cancer-wisconsin-diagnostic-dataset?resource=download
-
 # Breast Cancer Classification — ML Assignment 2
 
 ## a. Problem Statement
@@ -21,7 +19,7 @@ retraining the models.
 Dataset: Breast Cancer Wisconsin (Diagnostic)
 
 Original source:
-https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+https://www.kaggle.com/datasets/utkarshx27/breast-cancer-wisconsin-diagnostic-dataset?resource=download
 
 Local dataset filename: training_data.csv
 
