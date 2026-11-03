@@ -1,0 +1,65 @@
+{
+  "features": [
+    "x.radius_mean",
+    "x.texture_mean",
+    "x.perimeter_mean",
+    "x.area_mean",
+    "x.smoothness_mean",
+    "x.compactness_mean",
+    "x.concavity_mean",
+    "x.concave_pts_mean",
+    "x.symmetry_mean",
+    "x.fractal_dim_mean",
+    "x.radius_se",
+    "x.texture_se",
+    "x.perimeter_se",
+    "x.area_se",
+    "x.smoothness_se",
+    "x.compactness_se",
+    "x.concavity_se",
+    "x.concave_pts_se",
+    "x.symmetry_se",
+    "x.fractal_dim_se",
+    "x.radius_worst",
+    "x.texture_worst",
+    "x.perimeter_worst",
+    "x.area_worst",
+    "x.smoothness_worst",
+    "x.compactness_worst",
+    "x.concavity_worst",
+    "x.concave_pts_worst",
+    "x.symmetry_worst",
+    "x.fractal_dim_worst"
+  ],
+  "target_column": "target",
+  "target_mapping": {
+    "0": "Benign",
+    "1": "Malignant"
+  },
+  "random_state": 42,
+  "test_size": 0.2,
+  "training_rows": 455,
+  "testing_rows": 114,
+  "models": {
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "filename": "logistic_regression.joblib"
+    },
+    "decision_tree": {
+      "display_name": "Decision Tree",
+      "filename": "decision_tree.joblib"
+    },
+    "knn": {
+      "display_name": "KNN",
+      "filename": "knn.joblib"
+    },
+    "naive_bayes": {
+      "display_name": "Naive Bayes",
+      "filename": "naive_bayes.joblib"
+    },
+    "svm": {
+      "display_name": "Support Vector Machine",
+      "filename": "svm.joblib"
+    }
+  }
+}
