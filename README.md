@@ -1,5 +1,3 @@
-# Breast Cancer Classification — ML Assignment 2
-
 ## a. Problem Statement
 
 The objective of this project is to classify breast tumour samples
@@ -18,7 +16,7 @@ retraining the models.
 
 Dataset: Breast Cancer Wisconsin (Diagnostic)
 
-Original source:
+Download source:
 https://www.kaggle.com/datasets/utkarshx27/breast-cancer-wisconsin-diagnostic-dataset?resource=download
 
 Local dataset filename: training_data.csv

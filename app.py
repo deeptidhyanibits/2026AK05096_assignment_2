@@ -24,7 +24,7 @@ from sklearn.metrics import (
 # 1. Page settings
 # --------------------------------------------------
 st.set_page_config(
-    page_title="Breast Cancer Model Explorer",
+    page_title="Breast Cancer Classification and Model Comparison",
     page_icon="📊",
     layout="wide",
 )
@@ -76,7 +76,7 @@ def calculate_metrics(model, X, y):
 # --------------------------------------------------
 # 3. Introduction
 # --------------------------------------------------
-st.title("Breast Cancer Model Explorer")
+st.title("Breast Cancer Classification and Model Comparison")
 
 st.write(
     "Upload a labelled test dataset to compare five trained "
