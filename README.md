@@ -19,7 +19,14 @@ Dataset: Breast Cancer Wisconsin (Diagnostic)
 Download source:
 https://www.kaggle.com/datasets/utkarshx27/breast-cancer-wisconsin-diagnostic-dataset?resource=download
 
-Local dataset filename: training_data.csv
+Dataset files:
+
+- `training_data.csv`: Contains the complete original dataset of
+  569 instances, split into 455 training and 114 test instances
+  by `train_models.py`.
+- `test_data.csv`: Contains the 114 held-out test instances with
+  their target labels, used to evaluate the saved models in
+  the Streamlit app.
 
 | Property | Description |
 |---|---|
